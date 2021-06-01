@@ -68,6 +68,7 @@ namespace OpenSetup.Forms.Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.cbHackActive);
             this.Controls.Add(this.lblHackDesc);
             this.Controls.Add(this.lblHackName);

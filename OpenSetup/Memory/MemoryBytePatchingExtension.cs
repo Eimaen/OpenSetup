@@ -25,7 +25,6 @@ namespace MemoryHacking.Addons
     {
         public static void Patch(this Memory memory, PatchInstruction patchInstruction, bool enable)
         {
-            Console.WriteLine($"Patch {patchInstruction.Name}: {(enable ? "Active" : "Disabled")}");
             if (enable)
                 foreach (var patch in patchInstruction.Patches)
                     memory.Write(memory.Process.MainModule.BaseAddress + patch.Address.ToInt32(), patch.PatchBytes);

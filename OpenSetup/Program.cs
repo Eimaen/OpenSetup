@@ -11,21 +11,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MemoryHacking.Addons;
 using System.Threading;
+using OpenSetup.Special.Bruteforce;
 
 namespace OpenSetup
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            Console.Write("Enter GD process name: ");
-            string name = Console.ReadLine().Replace(".exe", "");
-            while (!Process.GetProcessesByName(name).Any()) Thread.Sleep(100);
-
             Application.EnableVisualStyles();
-            Application.Run(new FormMain(Process.GetProcessesByName("SDPS").First().InitializeMemory()));
-
-            Console.ReadKey();
+            Application.Run(new Forms.OpenSetup());
         }
     }
 }

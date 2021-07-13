@@ -170,7 +170,7 @@ namespace OpenSetup.Forms
         private void btnHelpWordlist_Click(object sender, EventArgs e) => MessageBox.Show("Enter the path to the list of words to check.\n" +
             "Format: one password per line.", "Help <3", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-        private void btnHelpProxyList_Click(object sender, EventArgs e) => MessageBox.Show("Well, you will not use this program without a proxy (I hope). Proxy list format: one proxy per line. ONLY HTTP PROXIES are accepted.\n" +
+        private void btnHelpProxyList_Click(object sender, EventArgs e) => MessageBox.Show("Well, you will not use this program without a proxy (I hope). Proxy list format: one proxy per line. ONLY SOCKS4 PROXIES are accepted (yet).\n" +
             "Example: 127.0.0.1:8080", "Help <3", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         private void btnClearProxyList_Click(object sender, EventArgs e) => lbProxyView.Items.Clear();
